@@ -27,6 +27,7 @@ export class MenuComponent {
   
   menuItems: MenuItem[] = [
     {
+      // ajustar disposição dos cards para ficar uniforme
       title: 'NOVIDADES',
       image: 'images/products/novidade.png',
       isNew: true,
@@ -140,22 +141,17 @@ export class MenuComponent {
           image: 'images/products/combo-burgao.png'
         },
         {
-          id: 13,
-          name: 'Combo Duplo',
-          description: '2 Classic Burgers + 2 Fritas + 2 Refrigerantes',
-          price: 69.90,
-          image: 'images/products/combo-duplo.png'
-        },
-        {
           id: 14,
           name: 'Combo Família',
-          description: '3 Burgers + 3 Fritas + 3 Bebidas + Onion Rings',
+          description: '4 Burgers + 4 Fritas + 4 Refrigerantes + Nuggets',
           price: 99.90,
           image: 'images/products/combo-familia.png'
         }
       ]
     }
   ];
+
+  // adicionar botão de incrementação e decrementação no card de produtos | será exibido após clicar em 'adicionar'
 
   onMenuItemClick(item: MenuItem) {
     this.selectedCategory = item;
